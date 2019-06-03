@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hero Slider Tabs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="hero-container">
+        <div id="nav-container">
+            <div class="nav-tab"><a href="#" class="nav-tab-a" data-image="img1">Landscape1</a></div>
+            <div class="nav-tab"><a href="#" class="nav-tab-a" data-image="img2">Landscape2</a></div>
+            <div class="nav-tab"><a href="#" class="nav-tab-a" data-image="img3">Landscape3</a></div>
+            <div class="nav-tab"><a href="#" class="nav-tab-a" data-image="img4">Landscape4</a></div>
+            <div class="nav-tab"><a href="#" class="nav-tab-a" data-image="img5">Landscape5</a></div>
+        </div>
+    </div>
+
+    <img class="images" data-src="img1" src="img/img1.jpeg">
+    <img class="images" data-src="img2" src="img/img2.jpeg">
+    <img class="images" data-src="img3" src="img/img3.jpg">
+    <img class="images" data-src="img4" src="img/img4.jpeg">
+    <img class="images" data-src="img5" src="img/img5.jpeg">
+
+    <script>
+        let container = document.getElementById('nav-container');
+        let changeContent = function () {
+
+        }
+
+        container.addEventListener('click', changeContent, false);
+    </script>
+
+</body>
+
+</html>
