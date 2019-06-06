@@ -10,47 +10,6 @@
 </head>
 
 <body>
-    <div id="hero-container">
-        <div id="nav-container">
-            <div class="nav-tab active"><a href="#" class="nav-tab-a" id="img1">Landscape1</a></div>
-            <div class="nav-tab"><a href="#" class="nav-tab-a" id="img2">Landscape2</a></div>
-            <div class="nav-tab"><a href="#" class="nav-tab-a" id="img3">Landscape3</a></div>
-            <div class="nav-tab"><a href="#" class="nav-tab-a" id="img4">Landscape4</a></div>
-            <div class="nav-tab"><a href="#" class="nav-tab-a" id="img5">Landscape5</a></div>
-        </div>
-    </div>
-
-    <img class="images" data-src="img1" src="img/img1.jpeg">
-    <img class="images" data-src="img2" src="img/img2.jpeg">
-    <img class="images" data-src="img3" src="img/img3.jpg">
-    <img class="images" data-src="img4" src="img/img4.jpeg">
-    <img class="images" data-src="img5" src="img/img5.jpeg">
-
-    <script type="text/javascript">
-        const heroContainer = document.getElementById('hero-container');
-        const container = document.getElementById('nav-container');
-
-        let changeContent = function (e) {
-            if (e.target !== e.currentTarget) {
-                let navTabs = document.getElementsByClassName('nav-tab-a');
-                for (i = 0; i < navTabs.length; i++) {
-                    navTabs[i].style.textDecoration = "none";
-                }
-
-                let clickedTab = e.target.id;
-                let currentTab = document.getElementById(clickedTab);
-                currentTab.style.textDecoration = 'underline';
-
-                let getBgImage = document.querySelector('[data-src=' + clickedTab + ']').src;
-                heroContainer.style.backgroundImage = '' + getBgImage + '';
-                console.log(clickedTab);
-                console.log(getBgImage);
-            }
-            e.stopPropagation();
-        }
-
-        container.addEventListener('click', changeContent, false);
-    </script>
 
 </body>
 
